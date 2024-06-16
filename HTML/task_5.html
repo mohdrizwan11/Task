@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+            width: 100%;
+            padding: 6px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 6px;
+        }
+        input[type="checkbox"] {
+            margin: 4px 2px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task-5</h2>
+    <h3>Registration form</h3>
+    <form>
+        <table border="1">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password" name="repassword"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" name="phonenumber"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="choose">Choose your country</option>
+                        <!-- Add options as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known:</td>
+                <td>
+                    <input type="checkbox" name="language" value="english"> English
+                    <input type="checkbox" name="language" value="kannada"> Kannada
+                    <input type="checkbox" name="language" value="hindi"> Hindi
+                    <input type="checkbox" name="language" value="telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration"> Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Log in to<a href="https://ethnus.com">Ethnus </a>Website</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
